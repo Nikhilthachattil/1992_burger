@@ -36,7 +36,7 @@ const Card = () => {
           </h2>
         </div>
       </div>
-      <div className="mt-10 flex flex-col md:flex-row justify-center gap-2 items-center mx-2">
+      <div className="mt-10 flex flex-col md:flex-row justify-center gap-2 items-center mx-5">
         {[0, 1, 2, 3, 4, 5].map((index) => (
           <motion.div
             key={index}
@@ -46,19 +46,19 @@ const Card = () => {
             variants={cardVariants}
             initial="collapsed"
             animate={index === expandedIndex ? "expanded" : "collapsed"}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.2 }}
             onClick={() => handleCardClick(index)}
             style={{
               backgroundImage: `url(${cardImages[index]})`,
             }}
           >
-            <div className="card-content h-full flex flex-col justify-end gap-2">
+            <div className="card-content h-full flex flex-col justify-end gap-2 ">
               <div className="card-footer rounded-[20px] md:rounded-b-[20px] bg-claret bg-opacity-30 md:bg-opacity-50 min-h-[100px] flex flex-col items-center justify-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                 <h2 className="text-xl font-semibold text-dorange text-center ">
                   Special <span className="hidden">{index + 1}</span> $20
                 </h2>
                 <p
-                  className={`border-[1px] text-dcream my-2 px-2 rounded-[10px] ${
+                  className={`border-[1px] text-dcream my-2 px-5  rounded-[10px] ${
                     index === expandedIndex ? "hidden" : ""
                   }
             `}
@@ -66,7 +66,7 @@ const Card = () => {
                   More
                 </p>
                 {index === expandedIndex && (
-                  <p className="mt-2 text-dcream text-center text-xs p-2">
+                  <p className="mt-2 text-dcream text-center text-xs p-2 align-middle ">
                     {cardDescriptions}
                   </p>
                 )}

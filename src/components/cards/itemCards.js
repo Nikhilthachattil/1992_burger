@@ -7,11 +7,11 @@ const ItemCards = (props) => {
       <ul className="md:text-[20px] text-[8px] flex md:block mx-5 font-burger">
         <li className="py-3 my-3 border-2 px-3 rounded-[28px] gap-2 text-center text-dcream ">
           <img src={props.img} alt="" className="  rounded-2xl " />
-          <h5 className="py-3 ">
-            <span className="text-claret px-1">&hearts;</span>
+          <h5 className="py-3 text-[18px]">
+            <span className="text-claret px-1 ">&hearts;</span>
             {props.title}
           </h5>
-          <h5 className="py-3">$ {props.price}</h5>
+          <h5 className="py-3 text-[20px]">$ {props.price}</h5>
           <p>{props.desc}</p>
           <button className="" onClick={() => addItem(props.item)}>
             <svg

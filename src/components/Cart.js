@@ -59,9 +59,10 @@ const Cart = () => {
 
                       <button
                         className=" "
-                        onClick={() =>
-                          updateItemQuantity(item.id, item.quantity - 1)
-                        }
+                        onClick={(e) => {
+                          e.preventDefault();
+                          updateItemQuantity(item.id, item.quantity - 1);
+                        }}
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -81,9 +82,10 @@ const Cart = () => {
                       <td className="my-5 md:my-6"> {item.quantity} </td>
                       <button
                         className=" "
-                        onClick={() =>
-                          updateItemQuantity(item.id, item.quantity + 1)
-                        }
+                        onClick={(e) => {
+                          e.preventDefault();
+                          updateItemQuantity(item.id, item.quantity + 1);
+                        }}
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

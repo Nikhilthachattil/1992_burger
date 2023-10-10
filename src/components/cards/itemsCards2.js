@@ -4,14 +4,16 @@ const ItemsCards2 = (props) => {
   const { addItem } = useCart();
   return (
     <div>
-      <ul className="md:text-[20px] text-[8px] w-full flex md:block mx-5 font-burger ">
+      <ul className="md:text-[20px] text-[8px] w-full flex flex-col md:block mx-5 font-burger select-none ">
         <li className="py-3 my-3 border-2 px-3 rounded-[28px] gap-2 text-center align-middle text-dcream mx-2 hover:scale-105 cursor-pointer ease-in-out duration-300 ">
-          <img src={props.img} alt="" className=" rounded-2xl " />
-          <h5 className="py-3  md:px-0 w-[100px] px-6  md:w-[180px] ">
+          <div>
+            <img src={props.img} alt="" className=" rounded-2xl " />
+          </div>
+          <h5 className="relative py-3 w-[150px] text-[20px] md:px-0  md:w-[180px] ">
             <span className="text-claret px-1 ">&hearts;</span>
             {props.title}
           </h5>
-          <h5 className="py-3">$ {props.price}</h5>
+          <h5 className="py-3 text-[20px]">$ {props.price}</h5>
           <p>{props.desc}</p>
           <button className="" onClick={() => addItem(props.item)}>
             <svg

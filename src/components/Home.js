@@ -10,14 +10,15 @@ import TheMenu from "./pages/theMenu";
 import Slide2 from "./pages/slide2";
 import img4 from "../assets/leftchevron.png";
 import img5 from "../assets/rightchevron.png";
+import img6 from "../assets/swipe.png";
 
 function Home() {
-  const slideLeft = () => {
+  const slideLeft = (e) => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 500;
   };
 
-  const slideRight = () => {
+  const slideRight = (e) => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft + 500;
   };
@@ -46,14 +47,14 @@ function Home() {
       </div>
       <div className="text-center bg-dorange">
         <h1 className="font-burger text-dcream my-5 mx-5 text-[50px] md:text-[60px]">
-          --The Me<span className="text-claret ">n</span>u--
+          -The Me<span className="text-claret ">n</span>u-
         </h1>
       </div>
       <div className="relative flex items-center cursor-pointer  ">
         <img
           src={img4}
           alt="left"
-          className="absolute z-50 w-[50px] p-1 md:w-[70px] md:h-[70px] bg-none left-2 md:p-3 border-2 border-dcream rounded-full mx-5 backdrop-blur-3xl"
+          className="hidden md:flex absolute z-50 w-[50px] p-1 md:w-[70px] md:h-[70px] bg-none left-2 md:p-3 border-2 border-dcream rounded-full mx-5 backdrop-blur-3xl"
           onClick={slideLeft}
         />
         <div
@@ -65,9 +66,12 @@ function Home() {
         <img
           src={img5}
           alt="right"
-          className="absolute z-50 w-[50px] p-1 md:w-[70px] md:h-[70px] right-2 md:p-3 border-2 border-dcream rounded-full mx-5 backdrop-blur-3xl"
+          className="hidden md:flex absolute z-50 w-[50px] p-1 md:w-[70px] md:h-[70px] right-2 md:p-3 border-2 border-dcream rounded-full mx-5 backdrop-blur-3xl"
           onClick={slideRight}
         />
+      </div>
+      <div className="flex justify-center">
+        <img src={img6} alt="" className="w-[600px] px-10 mx-10 my-5" />
       </div>
       <div className="relative text-[50px] md:text-[60px] font-thin font-Poppins justify-center text-center text-dcream bg-dorange">
         <h1 className="font-burger my-2 mx-5 ">

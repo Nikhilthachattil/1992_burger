@@ -82,15 +82,15 @@ function MenuBar() {
 
         <div
           id="menu-btn"
-          className=" static right-0 text-white px-5 lg:hidden py-5 z-50"
+          className=" static right-0 text-white px-5 lg:hidden pt-5 z-50"
         >
           <img
             onClick={(e) => {
-              e.stopPropagation();
+              e.preventDefault();
               setOpen(!open);
             }}
             ref={svgRef}
-            className="md:w-6 md:h-6 w-5 h-5 cursor-pointer "
+            className=" w-8 h-8 cursor-pointer "
             src={img20}
             alt=""
           />
