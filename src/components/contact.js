@@ -1,9 +1,11 @@
 import React from "react";
-import img7 from "../assets/facbooklogo.png";
-import img8 from "../assets/whatsapp-01.png";
-import img9 from "../assets/behance-01.png";
-import img10 from "../assets/instagram-01.png";
-import img11 from "../assets/linkedin-01.png";
+import img1 from "../assets/15.jpg";
+import img2 from "../assets/burgermenucontact.png";
+import img7 from "../assets/facbooklogoorange.png";
+import img8 from "../assets/whatsapp-orange.png";
+import img9 from "../assets/behance-orange.png";
+import img10 from "../assets/instagram-orange.png";
+import img11 from "../assets/linkedin-orange.png";
 
 function contact() {
   function Submit(e) {
@@ -17,26 +19,18 @@ function contact() {
     );
   }
   return (
-    <section className="flex flex-col place-content-center">
-      <div className="font-thin font-Satisfy text-2xl text-dgreen py-2">
+    <section className="flex flex-col place-content-center mb-10">
+      <div className="font-thin font-burger text-2xl text-dorange py-2">
         <h1 className="px-5">Contact : </h1>
       </div>
-      <div className="relative block text-xs py-5 mx-5  md:m-1 md:mx-5 md:flex md:flex-wrap md:gap-5  text-dgreen backdrop-blur-lg place-content-center bg-mgreen lg:mx-12 rounded-xl md:rounded-[50px]">
+      <div className="relative block text-xs py-5 mx-5  md:m-1 md:mx-5 md:flex md:flex-wrap md:gap-5  text-dgreen backdrop-blur-lg place-content-center bg-claret lg:mx-12 rounded-xl md:rounded-[50px]">
+        <div className="text-center align-middle  justify-center flex py-5">
+          {" "}
+          <img src={img2} alt="" className="h-12" />
+        </div>
         <div className="md:flex-col mx-5  md:w-2/6 gap-2 md:px-6  bg-dcream shadow-inner backdrop-blur-lg rounded-xl">
-          <h1 className="text-mgreen py-5 md:text-2xl mx-5">THANK YOU</h1>
-
-          <p className="text-justify align-middle py-4 md:py-10 text-dcream bg-mgreen shadow-md px-2 m-2 rounded-t-xl md:rounded-xl text-xs">
-            With a passion for drawing and creating, I started playing with the
-            thought of being a designer already in my childhood. However,
-            somewhere between childhood and my early twenties, I somehow dropped
-            that dream since I was following the path of an IT support engineer
-            Now, I am obsessed with changing my career to the design field of
-            web development, where designing and coding come together to give me
-            a thrill. I am looking to transition into a role as a front-end
-            developer. With a background of 6 years in IT support, I am now
-            drawn to the creative aspects of the field. While this might seem
-            like a significant change, it is a direction I am eager to pursue.
-          </p>
+          <h1 className="text-claret py-5 md:text-2xl mx-5">THANK YOU</h1>
+          <img src={img1} alt="" className="rounded-3xl p-5" />
         </div>
         <div className="bg-dcream my-2 md:py-9 xs:m-5 md:m-1 flex md:flex-col justify-between md:gap-10 px-2 w-fit mx-auto lg:mx-5 text-justify place-content-center rounded-xl">
           <a
@@ -106,7 +100,7 @@ function contact() {
           onSubmit={(e) => Submit(e)}
         >
           <div class="flex flex-wrap text-justify md:gap-6 justify-between">
-            <label for="name" class="py-4 text-dblack">
+            <label htmlfor="name" class="py-4 text-dblack">
               Name:
             </label>
             <input
@@ -114,11 +108,11 @@ function contact() {
               type="text"
               id="number"
               placeholder="Full Name"
-              class=" rounded-[20px] place-content-end  bg-mgreen py-2 my-2 px-4  outline-none "
+              class=" rounded-[20px] place-content-end  bg-claret py-2 my-2 px-4  outline-none "
             />
           </div>
           <div class="flex flex-wrap text-justify justify-between">
-            <label for="name" class="py-4 text-dblack">
+            <label htmlfor="name" class="py-4 text-dblack">
               Phone:
             </label>
             <input
@@ -126,11 +120,11 @@ function contact() {
               name="your-number"
               id="name"
               placeholder="Phone Number"
-              class=" rounded-[20px] place-content-end  bg-mgreen py-2 my-2 px-4  outline-none "
+              class=" rounded-[20px] place-content-end  bg-claret py-2 my-2 px-4  outline-none "
             />
           </div>
           <div class="flex flex-wrap text-justify justify-between">
-            <label for="name" class="py-4 text-dblack">
+            <label htmlfor="name" class="py-4 text-dblack">
               Email:
             </label>
             <input
@@ -138,11 +132,11 @@ function contact() {
               name="your-email"
               id="name"
               placeholder="username@domain.com"
-              class=" rounded-[20px] place-content-end  bg-mgreen py-2 my-2 px-4  outline-none "
+              class=" rounded-[20px] place-content-end bg-claret py-2 my-2 px-4  outline-none "
             />
           </div>
           <div class="flex flex-wrap text-justify justify-between">
-            <label for="name" class="py-4 text-dblack">
+            <label htmlfor="name" class="py-4 text-dblack">
               Subject:
             </label>
             <input
@@ -150,7 +144,7 @@ function contact() {
               name="your-subject"
               id="name"
               placeholder="Subject"
-              class=" rounded-[20px] place-content-end  bg-mgreen py-2 my-2 px-4  outline-none "
+              class=" rounded-[20px] place-content-end bg-claret py-2 my-2 px-4  outline-none "
             />
           </div>
 
@@ -160,32 +154,32 @@ function contact() {
               name="message"
               id="message"
               placeholder="Your Message"
-              class="md:w-full w-full my-2 bg-mgreen rounded-xl text-center resize-none"
+              class="md:w-full w-full my-2 bg-claret rounded-xl text-center resize-none"
               required
             ></textarea>
           </div>
           <div className="">
             <button
-              class="bg-mgreen hover:bg-blue-700 text-dcream font-bold py-2 px-4 rounded-full"
+              class="bg-claret hover:bg-blue-700 text-dcream font-bold py-2 px-4 rounded-full"
               type="submit"
             >
               Submit
             </button>
           </div>
           <div>
-            <h1 className="text-dgreen py-4 md:text-2xl mx-5 font-Satisfy">
-              Nikhil Babu Thachattil
+            <h1 className="text-dorange py-4 md:text-2xl mx-5 font-burger">
+              1992 Burger
             </h1>
-            <p className="text-dgreen py-2">
+            <p className="text-claret py-2">
               Phone: +971551227158, +918907117188
             </p>
             <a
               href="mailto:thachattilnikhil@gmail.com"
               rel="noreferrer"
               target="_blank"
-              className="cursor-pointer text-dgreen py-2"
+              className="cursor-pointer text-claret py-2"
             >
-              Thachattilnikhil@gmail.com
+              1992burger@gmail.com
             </a>
           </div>
         </form>
