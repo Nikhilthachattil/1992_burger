@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/1992_burger/static/css/main.aa3ec505.css",
-    "main.js": "/1992_burger/static/js/main.0bac37e3.js",
+    "main.css": "/1992_burger/static/css/main.74ffd1c7.css",
+    "main.js": "/1992_burger/static/js/main.52246ba3.js",
     "static/js/787.cb1da71a.chunk.js": "/1992_burger/static/js/787.cb1da71a.chunk.js",
     "static/media/15.jpg": "/1992_burger/static/media/15.1ad262a48c5c94fc737a.jpg",
     "static/media/14.jpg": "/1992_burger/static/media/14.ae6c3be534d5f600a97f.jpg",
@@ -12,15 +12,16 @@
     "static/media/12.jpg": "/1992_burger/static/media/12.b1206245ade82aefcd21.jpg",
     "static/media/13.jpg": "/1992_burger/static/media/13.de70880c579dc45ad268.jpg",
     "static/media/18.jpg": "/1992_burger/static/media/18.31a95d09303820d96d27.jpg",
+    "static/media/menubar.png": "/1992_burger/static/media/menubar.85b7c9a34924be82b810.png",
     "static/media/slide5.png": "/1992_burger/static/media/slide5.c49be2a6894d8f4926c5.png",
     "static/media/hamburger2.png": "/1992_burger/static/media/hamburger2.f733be2a5e9d93c462bb.png",
     "index.html": "/1992_burger/index.html",
-    "main.aa3ec505.css.map": "/1992_burger/static/css/main.aa3ec505.css.map",
-    "main.0bac37e3.js.map": "/1992_burger/static/js/main.0bac37e3.js.map",
+    "main.74ffd1c7.css.map": "/1992_burger/static/css/main.74ffd1c7.css.map",
+    "main.52246ba3.js.map": "/1992_burger/static/js/main.52246ba3.js.map",
     "787.cb1da71a.chunk.js.map": "/1992_burger/static/js/787.cb1da71a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa3ec505.css",
-    "static/js/main.0bac37e3.js"
+    "static/css/main.74ffd1c7.css",
+    "static/js/main.52246ba3.js"
   ]
 }
