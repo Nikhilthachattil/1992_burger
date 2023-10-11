@@ -105,28 +105,28 @@ const data = {
   ],
   productData2: [
     {
-      id: 1,
+      id: 13,
       img: img13,
       title: "Chicken Burger",
       desc: "Introducing our signature burger, made from plants and is allergen free This mouth-watering Eat Curious burger is packed with flavour, a must for your next BBQ. Fancy being creative…simply grill, smash, and serve on a bun with your favorite toppings for an unforgettable smashed burger experience",
       price: 50,
     },
     {
-      id: 1,
+      id: 14,
       img: img14,
       title: "Egg Burger",
       desc: "Introducing our signature burger, made from plants and is allergen free This mouth-watering Eat Curious burger is packed with flavour, a must for your next BBQ. Fancy being creative…simply grill, smash, and serve on a bun with your favorite toppings for an unforgettable smashed burger experience",
       price: 50,
     },
     {
-      id: 1,
+      id: 15,
       img: img15,
       title: "Mutton Burger",
       desc: "Introducing our signature burger, made from plants and is allergen free This mouth-watering Eat Curious burger is packed with flavour, a must for your next BBQ. Fancy being creative…simply grill, smash, and serve on a bun with your favorite toppings for an unforgettable smashed burger experience",
       price: 50,
     },
     {
-      id: 1,
+      id: 16,
       img: img16,
       title: "Beef Burger",
       desc: "Introducing our signature burger, made from plants and is allergen free This mouth-watering Eat Curious burger is packed with flavour, a must for your next BBQ. Fancy being creative…simply grill, smash, and serve on a bun with your favorite toppings for an unforgettable smashed burger experience",

@@ -8,7 +8,7 @@ function footer() {
   return (
     <footer>
       <nav className=" cursor-pointer mx-auto flex text-xs md:text-[16px] min-h-full w-full justify-between py-2 bg-dorange ">
-        <h3 className="text-dcream mx-5 py-2 my-3 md:my-6 ">
+        <h3 className="text-dcream mx-5 py-2 my-4 md:my-6 ">
           &#169; NikhilbabuThachattil
         </h3>
         <div className="flex gap-2 mx-5 my-3">

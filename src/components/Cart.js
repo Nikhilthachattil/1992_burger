@@ -55,7 +55,7 @@ const Cart = () => {
                       <td className="my-5 w-[100px] lg:w-[150px]">
                         {item.title}
                       </td>
-                      <td className="my-5 md:my-6 w-[50px]">$ {item.price}</td>
+                      <td className="my-5 md:my-6 w-[50px] ">$ {item.price}</td>
 
                       <button
                         className=" "
@@ -119,7 +119,7 @@ const Cart = () => {
               <h2 className="mx-5 px-5 m-2 cursor-pointer text-dcream rounded-full text-[20px] font-burger">
                 Total Price :
               </h2>
-              <h2 className="mx-2 py-2 m-2 cursor-pointer text-dorange bg-dcream font-sans font-bold rounded-full text-[18px]">
+              <h2 className="mx-5 py-2 m-2 cursor-pointer text-dorange bg-dcream font-sans font-bold rounded-full text-[18px]">
                 $ {cartTotal}
               </h2>
             </div>

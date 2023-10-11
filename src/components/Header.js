@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <nav className="cursor-pointer mx-auto flex min-h-full w-full justify-between relative bg-dorange font-burger">
         <NavLink to="/">
-          <div className="flex  h-[40px] my-4 py-5 px-10 md:py-3 items-center">
+          <div className="flex  h-[40px] my-4 py-6 px-10 md:py-3 items-center">
             <h1 className="text-dcream font-thin  text-[20px]">1992 BURGER</h1>
           </div>{" "}
         </NavLink>

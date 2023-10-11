@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/menubar.png";
+
 import img2 from "../../assets/slide2.png";
 import img3 from "../../assets/slide3.png";
 import img4 from "../../assets/slide4.png";
@@ -17,9 +17,6 @@ function slide() {
               className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
             >
               <li>
-                <img className="my-2" src={img1} alt="" />
-              </li>
-              <li>
                 <img src={img2} alt="" />
               </li>
               <li>
@@ -34,9 +31,7 @@ function slide() {
               <li>
                 <img src={img6} alt="" />
               </li>
-              <li>
-                <img src={img1} alt="" />
-              </li>
+
               <li>
                 <img src={img2} alt="" />
               </li>
@@ -58,9 +53,6 @@ function slide() {
               className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
             >
               <li>
-                <img src={img1} alt="" />
-              </li>
-              <li>
                 <img src={img2} alt="" />
               </li>
               <li>
@@ -75,9 +67,7 @@ function slide() {
               <li>
                 <img src={img6} alt="" />
               </li>
-              <li>
-                <img src={img1} alt="" />
-              </li>
+
               <li>
                 <img src={img2} alt="" />
               </li>

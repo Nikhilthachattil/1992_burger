@@ -36,7 +36,7 @@ const Card = () => {
           </h2>
         </div>
       </div>
-      <div className="mt-10 flex flex-col md:flex-row justify-center gap-2 items-center mx-5">
+      <div className="mt-10 flex flex-col md:flex-row justify-center gap-2 items-center align-middle text-center mx-5 ">
         {[0, 1, 2, 3, 4, 5].map((index) => (
           <motion.div
             key={index}
@@ -46,15 +46,15 @@ const Card = () => {
             variants={cardVariants}
             initial="collapsed"
             animate={index === expandedIndex ? "expanded" : "collapsed"}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.5 }}
             onClick={() => handleCardClick(index)}
             style={{
               backgroundImage: `url(${cardImages[index]})`,
             }}
           >
             <div className="card-content h-full flex flex-col justify-end gap-2 ">
-              <div className="card-footer rounded-[20px] md:rounded-b-[20px] bg-claret bg-opacity-30 md:bg-opacity-50 min-h-[100px] flex flex-col items-center justify-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-                <h2 className="text-xl font-semibold text-dorange text-center ">
+              <div className="card-footer rounded-[20px] md:rounded-b-[20px] bg-claret bg-opacity-30 md:bg-opacity-50 min-h-[100px] flex flex-col items-center justify-center text-center align-middle drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                <h2 className="md:text-xl font-semibold text-dorange text-center ">
                   Special <span className="hidden">{index + 1}</span> $20
                 </h2>
                 <p
@@ -66,7 +66,7 @@ const Card = () => {
                   More
                 </p>
                 {index === expandedIndex && (
-                  <p className="mt-2 text-dcream text-center text-xs p-2 align-middle ">
+                  <p className="mt-2 text-dcream  text-xs px-10 mx-2 ">
                     {cardDescriptions}
                   </p>
                 )}
@@ -74,7 +74,7 @@ const Card = () => {
                   <NavLink to="/Profile">
                     <div
                       href="#download"
-                      className="px-8 py-2 text-dcream font-burger font-thin text-lg mb-5 border-2 border-dcream rounded-3xl"
+                      className="px-8 py-2 my-2 text-dcream font-burger font-thin md:text-lg mb-5 border-2 border-dcream rounded-3xl"
                     >
                       Click Here
                     </div>
